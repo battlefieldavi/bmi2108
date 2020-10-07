@@ -358,31 +358,11 @@ class _iState extends State<i> {
               ),
             ),
 
-            // GestureDetector(
-            //   onTap: () {
-            //     // Navigator.push(context, MaterialPageRoute(builder: (context) {
-            //     //   return ScanScreen();
-            //     Navigator.pushNamed(context, '/f');
-            //   },
-            //   child: Container(
-            //       height: 80.0,
-            //       width: double.infinity,
-            //       color: in1,
-            //       child: Center(
-            //           child: Text(
-            //             "CALCULATE",
-            //             style: TextStyle(color: Colors.white, fontSize: 20.0),
-            //           ))),
-            // ),
-
             GestureDetector(
               onTap: () {
-                CalculatorBrain calc=CalculatorBrain(height: height, weight: weight);
-
+                CalculatorBrain calc=CalculatorBrain(height: height, weight: weight)
                 Navigator.push(
-
                   context,
-
                   MaterialPageRoute(
                       builder: (context) => Result(bmiResult: calc.calculateBMI(),resultText: calc.getResult(),interpretation: calc.getInterpretation(),)
                   ),
@@ -400,17 +380,11 @@ class _iState extends State<i> {
                   color: in1,
                   child: Center(
                       child: Text(
-                        "CALCULATE",
+                        "SPLASHSCREEN",
                         style: TextStyle(color: Colors.white, fontSize: 20.0),
                       ))),
             ),
-            // FlatButton(
-            // color: Colors.blue,onPressed: (){
-            //
-            //  setState(() {
-            //    a++;
-            //  });
-            // }, child: Rcard(cardChild: Text(a.toString()),))
+
             GestureDetector(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
